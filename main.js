@@ -1,0 +1,1 @@
+(()=>{const e=document.createElement("div");e.textContent="bruh",document.body.appendChild(e)})();
