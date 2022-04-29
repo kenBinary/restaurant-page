@@ -1,3 +1,3 @@
-const element = document.createElement('div');
-element.textContent = "bruh";
-document.body.appendChild(element);
+import pageLoad from "./page-load";
+
+pageLoad();
