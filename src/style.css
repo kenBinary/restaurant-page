@@ -1,11 +1,21 @@
 *{
-    outline: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-#content{
+body{
     display: flex;
     flex-direction: column;
 }
+#content{
+    outline: 1px solid black;
+    display: flex;
+    margin: 25px;
+    flex-basis: 90vh;
+    flex-direction: column;
+}
 .nav-bar{
+    outline: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -25,5 +35,31 @@
     padding: 0px;
     padding-left: 5px;
     padding-right: 5px;
-
+}
+main{
+    display: flex;
+    flex: 1;
+}
+main > section{
+    flex: 1;
+    outline: 1px solid black;
+}
+.first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-section div{
+    width: 380px;
+}
+.first-section :nth-child(1){
+    margin-top: 130px;
+    font-size: 80px;
+}
+.first-section :nth-child(2){
+    font-size: 50px;
+    margin-top: 0px;
+}
+.first-section :nth-child(3){
+    margin-top: 10px;
 }

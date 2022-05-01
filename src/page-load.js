@@ -28,7 +28,27 @@ function navBar(content) {
 }
 function mainContent(content) {
     const main = document.createElement("main");
+    const firstSection = document.createElement("section");
+    firstSection.classList.add("first-section");
+    const secondSection = document.createElement("section");
+    secondSection.classList.add("second-section");
+
+    const div1 = document.createElement("div");
+    div1.textContent = "Eat Today"
+    const div2 = document.createElement("div");
+    div2.textContent = "Live Another Day"
+    const div3 = document.createElement("div");
+    div3.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at laoreet lectus. Vestibulum faucibus justo condimentum quam pretium, id bibendum metus commodo.";
+    firstSection.appendChild(div1);
+    firstSection.appendChild(div2);
+    firstSection.appendChild(div3);
+
+
+
+    main.appendChild(firstSection);
+    main.appendChild(secondSection);
     content.appendChild(main);
+
 }
 
 
@@ -37,5 +57,4 @@ export default function loadPage() {
     const content = document.querySelector("#content");
     navBar(content);
     mainContent(content);
-
 }
