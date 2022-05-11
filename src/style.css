@@ -1,34 +1,40 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+body {
     display: flex;
     flex-direction: column;
+    font-family: 'Lora', serif;
 }
-#content{
+
+#content {
     outline: 1px solid black;
     display: flex;
     margin: 25px;
     flex-basis: 90vh;
     flex-direction: column;
 }
-.nav-bar{
+
+.nav-bar {
     outline: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
 }
-.page-title{
+
+.page-title {
     display: flex;
     align-items: center;
     height: 100%;
     margin: 0px;
     padding: 0px;
 }
-.nav-bar :nth-child(2){
+
+.nav-bar :nth-child(2) {
     display: flex;
     column-gap: 20px;
     list-style: none;
@@ -36,30 +42,37 @@ body{
     padding-left: 5px;
     padding-right: 5px;
 }
-main{
+
+main {
     display: flex;
     flex: 1;
 }
-main > section{
+
+main>section {
     flex: 1;
     outline: 1px solid black;
 }
-.first-section{
+
+.first-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.first-section div{
+
+.first-section div {
     width: 380px;
 }
-.first-section :nth-child(1){
+
+.first-section :nth-child(1) {
     margin-top: 130px;
     font-size: 80px;
 }
-.first-section :nth-child(2){
-    font-size: 50px;
+
+.first-section :nth-child(2) {
+    font-size: 47px;
     margin-top: 0px;
 }
-.first-section :nth-child(3){
+
+.first-section :nth-child(3) {
     margin-top: 10px;
 }
