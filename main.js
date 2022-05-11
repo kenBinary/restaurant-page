@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Lora&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n    margin: 0px;\\n    padding: 0px;\\n    box-sizing: border-box;\\n}\\nbody {\\n    display: flex;\\n    flex-direction: column;\\n    font-family: 'Lora', serif;\\n}\\n\\n#content {\\n    outline: 1px solid black;\\n    display: flex;\\n    margin: 25px;\\n    flex-basis: 90vh;\\n    flex-direction: column;\\n}\\n\\n.nav-bar {\\n    outline: 1px solid black;\\n    display: flex;\\n    align-items: center;\\n    justify-content: space-evenly;\\n\\n}\\n\\n.page-title {\\n    display: flex;\\n    align-items: center;\\n    height: 100%;\\n    margin: 0px;\\n    padding: 0px;\\n}\\n\\n.nav-bar :nth-child(2) {\\n    display: flex;\\n    column-gap: 20px;\\n    list-style: none;\\n    padding: 0px;\\n    padding-left: 5px;\\n    padding-right: 5px;\\n}\\n\\nmain {\\n    display: flex;\\n    flex: 1;\\n}\\n\\nmain>section {\\n    flex: 1;\\n    outline: 1px solid black;\\n}\\n\\n.first-section {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: center;\\n}\\n\\n.first-section div {\\n    width: 380px;\\n}\\n\\n.first-section :nth-child(1) {\\n    margin-top: 130px;\\n    font-size: 80px;\\n}\\n\\n.first-section :nth-child(2) {\\n    font-size: 47px;\\n    margin-top: 0px;\\n}\\n\\n.first-section :nth-child(3) {\\n    margin-top: 10px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurant-page/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Lora&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n    margin: 0px;\\n    padding: 0px;\\n    box-sizing: border-box;\\n}\\n\\n:root {\\n    --cardinal: hsla(355, 54%, 44%, 1);\\n    --davys-grey: hsla(0, 0%, 28%, 1);\\n    --honey-yellow: hsla(40, 89%, 55%, 1);\\n    --black: hsla(0, 0%, 0%, 1);\\n    --eggshell: hsla(60, 22%, 84%, 1);\\n}\\n\\nbody {\\n    display: flex;\\n    flex-direction: column;\\n    font-family: 'Lora', serif;\\n    background-color: var(--honey-yellow);\\n}\\n\\n#content {\\n    display: flex;\\n    margin: 25px;\\n    flex-basis: 90vh;\\n    flex-direction: column;\\n}\\n\\n.nav-bar {\\n    display: flex;\\n    align-items: center;\\n    justify-content: space-evenly;\\n    background-color: var(--eggshell);\\n    border-radius: 5px;\\n    padding: 5px;\\n}\\n\\n.page-title {\\n    display: flex;\\n    align-items: center;\\n    height: 100%;\\n    margin: 0px;\\n    padding: 0px;\\n    font-size: 30px;\\n    color: var();\\n}\\n\\n.nav-bar :nth-child(2) {\\n    display: flex;\\n    column-gap: 20px;\\n    list-style: none;\\n    padding: 0px;\\n    padding-left: 5px;\\n    padding-right: 5px;\\n    font-size: 17px;\\n}\\n\\nmain {\\n    display: flex;\\n    flex: 1;\\n}\\n\\nmain>section {\\n    flex: 1;\\n}\\n\\n.first-section {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: center;\\n}\\n\\n.first-section div {\\n    width: 380px;\\n}\\n\\n.first-section :nth-child(1) {\\n    margin-top: 130px;\\n    font-size: 80px;\\n    font-weight: bolder;\\n}\\n\\n.first-section :nth-child(2) {\\n    font-size: 47px;\\n    margin-top: 0px;\\n    font-weight: 800;\\n}\\n\\n.first-section :nth-child(3) {\\n    margin-top: 10px;\\n}\\n\\n.second-section{\\n    display: flex;\\n    justify-content: center;\\n}\\n.second-section img{\\n    padding: 0px;\\n    width: 80%;\\n    margin: 0px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurant-page/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nfunction navBar(content) {\n    const navBar = document.createElement(\"nav\");\n    navBar.classList.add(\"nav-bar\");\n\n    const pageTitle = document.createElement(\"h1\");\n    pageTitle.classList.add(\"page-title\");\n    pageTitle.textContent = \"sussy restaurant\"\n\n\n\n    const navList = document.createElement(\"ul\");\n    const pageOptions = [\"Menu\",\"Categories\",\"About\",\"Reviews\",\"Restaurants\"];\n    for (let i = 0; i < 5; i++) {\n        const list = document.createElement(\"li\");\n        list.textContent = pageOptions[i];\n        list.classList.add(\"list\");\n        navList.appendChild(list);\n    }\n\n\n    navBar.appendChild(pageTitle);\n    navBar.appendChild(navList);\n\n\n    content.appendChild(navBar);\n}\nfunction mainContent(content) {\n    const main = document.createElement(\"main\");\n    const firstSection = document.createElement(\"section\");\n    firstSection.classList.add(\"first-section\");\n    const secondSection = document.createElement(\"section\");\n    secondSection.classList.add(\"second-section\");\n\n    const div1 = document.createElement(\"div\");\n    div1.textContent = \"Eat Today\"\n    const div2 = document.createElement(\"div\");\n    div2.textContent = \"Live Another Day\"\n    const div3 = document.createElement(\"div\");\n    div3.textContent = \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at laoreet lectus. Vestibulum faucibus justo condimentum quam pretium, id bibendum metus commodo.\";\n    firstSection.appendChild(div1);\n    firstSection.appendChild(div2);\n    firstSection.appendChild(div3);\n\n\n\n    main.appendChild(firstSection);\n    main.appendChild(secondSection);\n    content.appendChild(main);\n\n}\n\n\n\nfunction loadPage() {\n    const content = document.querySelector(\"#content\");\n    navBar(content);\n    mainContent(content);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_food_pic_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/food-pic.png */ \"./src/assets/food-pic.png\");\n\n\n\nfunction navBar(content) {\n    const navBar = document.createElement(\"nav\");\n    navBar.classList.add(\"nav-bar\");\n\n    const pageTitle = document.createElement(\"h1\");\n    pageTitle.classList.add(\"page-title\");\n    pageTitle.textContent = \"sussy restaurant\"\n\n\n\n    const navList = document.createElement(\"ul\");\n    const pageOptions = [\"Menu\",\"Categories\",\"About\",\"Reviews\",\"Restaurants\"];\n    for (let i = 0; i < 5; i++) {\n        const list = document.createElement(\"li\");\n        list.textContent = pageOptions[i];\n        list.classList.add(\"list\");\n        navList.appendChild(list);\n    }\n\n\n    navBar.appendChild(pageTitle);\n    navBar.appendChild(navList);\n\n\n    content.appendChild(navBar);\n}\nfunction mainContent(content) {\n    const main = document.createElement(\"main\");\n    const firstSection = document.createElement(\"section\");\n    firstSection.classList.add(\"first-section\");\n    const secondSection = document.createElement(\"section\");\n    secondSection.classList.add(\"second-section\");\n    const test = new Image();\n    test.src = _assets_food_pic_png__WEBPACK_IMPORTED_MODULE_1__;\n    secondSection.appendChild(test);\n\n\n\n\n\n\n\n\n\n\n    const div1 = document.createElement(\"div\");\n    div1.textContent = \"Eat Today\"\n    const div2 = document.createElement(\"div\");\n    div2.textContent = \"Live Another Day\"\n    const div3 = document.createElement(\"div\");\n    div3.textContent = \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at laoreet lectus. Vestibulum faucibus justo condimentum quam pretium, id bibendum metus commodo.\";\n    firstSection.appendChild(div1);\n    firstSection.appendChild(div2);\n    firstSection.appendChild(div3);\n\n    main.appendChild(firstSection);\n    main.appendChild(secondSection);\n    content.appendChild(main);\n\n}\n\n\n\nfunction loadPage() {\n    const content = document.querySelector(\"#content\");\n    navBar(content);\n    mainContent(content);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
+
+/***/ }),
+
+/***/ "./src/assets/food-pic.png":
+/*!*********************************!*\
+  !*** ./src/assets/food-pic.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f7410eeb5b19397e559b.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/food-pic.png?");
 
 /***/ })
 
@@ -181,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +217,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
