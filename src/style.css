@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+    --cardinal: hsla(355, 54%, 44%, 1);
+    --davys-grey: hsla(0, 0%, 28%, 1);
+    --honey-yellow: hsla(40, 89%, 55%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+    --eggshell: hsla(60, 22%, 84%, 1);
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Lora', serif;
+    background-color: var(--honey-yellow);
 }
 
 #content {
-    outline: 1px solid black;
     display: flex;
     margin: 25px;
     flex-basis: 90vh;
@@ -19,11 +29,12 @@ body {
 }
 
 .nav-bar {
-    outline: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    background-color: var(--eggshell);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .page-title {
@@ -32,6 +43,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-size: 30px;
+    color: var();
 }
 
 .nav-bar :nth-child(2) {
@@ -41,6 +54,7 @@ body {
     padding: 0px;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 17px;
 }
 
 main {
@@ -50,7 +64,6 @@ main {
 
 main>section {
     flex: 1;
-    outline: 1px solid black;
 }
 
 .first-section {
@@ -66,13 +79,25 @@ main>section {
 .first-section :nth-child(1) {
     margin-top: 130px;
     font-size: 80px;
+    font-weight: bolder;
 }
 
 .first-section :nth-child(2) {
     font-size: 47px;
     margin-top: 0px;
+    font-weight: 800;
 }
 
 .first-section :nth-child(3) {
     margin-top: 10px;
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+}
+.second-section img{
+    padding: 0px;
+    width: 80%;
+    margin: 0px;
 }
