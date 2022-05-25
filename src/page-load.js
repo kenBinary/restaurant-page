@@ -1,32 +1,54 @@
 import './style.css';
 import Icon from './assets/food-pic.png';
 
-function navBar(content) {
+// function navBar(content) {
+//     const navBar = document.createElement("nav");
+//     navBar.classList.add("nav-bar");
+//     const pageTitle = document.createElement("h1");
+//     pageTitle.classList.add("page-title");
+//     pageTitle.textContent = "sussy restaurant"
+//     const navList = document.createElement("ul");
+//     const pageOptions = ["Menu","Categories","About","Reviews","Home"];
+//     const test = [];
+//     for (let i = 0; i < pageOptions.length; i++) {
+//         const list = document.createElement("li");
+//         list.textContent = pageOptions[i];
+//         list.classList.add("list");
+//         navList.appendChild(list);
+//         test.push(list);
+//     }
+//     navBar.appendChild(pageTitle);
+//     navBar.appendChild(navList);
+//     content.appendChild(navBar);
+// }
+
+const navTest = (()=>{
+    const content = document.querySelector("#content");
     const navBar = document.createElement("nav");
     navBar.classList.add("nav-bar");
-
     const pageTitle = document.createElement("h1");
     pageTitle.classList.add("page-title");
     pageTitle.textContent = "sussy restaurant"
-
-
-
     const navList = document.createElement("ul");
-    const pageOptions = ["Menu","Categories","About","Reviews","Restaurants"];
-    for (let i = 0; i < 5; i++) {
+    const pageOptions = ["Menu","Categories","About","Reviews","Home"];
+    const test = [];
+    for (let i = 0; i < pageOptions.length; i++) {
         const list = document.createElement("li");
         list.textContent = pageOptions[i];
         list.classList.add("list");
         navList.appendChild(list);
+        test.push(list);
     }
+    function appendElement() {
+        navBar.appendChild(pageTitle);
+        navBar.appendChild(navList);
+        content.appendChild(navBar);
+    }
+    return{
+        appendElement,test
+    }
+})();
 
-
-    navBar.appendChild(pageTitle);
-    navBar.appendChild(navList);
-
-
-    content.appendChild(navBar);
-}
 function mainContent(content) {
     const main = document.createElement("main");
     const firstSection = document.createElement("section");
@@ -36,16 +58,6 @@ function mainContent(content) {
     const test = new Image();
     test.src = Icon;
     secondSection.appendChild(test);
-
-
-
-
-
-
-
-
-
-
     const div1 = document.createElement("div");
     div1.textContent = "Eat Today"
     const div2 = document.createElement("div");
@@ -61,11 +73,10 @@ function mainContent(content) {
     content.appendChild(main);
 
 }
-
-
-
-export default function loadPage() {
+function loadPage() {
     const content = document.querySelector("#content");
-    navBar(content);
+    // navBar(content);
+    navTest.appendElement();
     mainContent(content);
 }
+export { loadPage, mainContent,navTest}

@@ -1,3 +1,9 @@
-import pageLoad from "./page-load";
+import * as pageLoad from './page-load.js'
 
-pageLoad();
+pageLoad.loadPage();
+const test = pageLoad.navTest.test;
+test.forEach((element)=>{
+    element.addEventListener('click',()=>{
+        console.log(element.textContent);
+    });
+});
