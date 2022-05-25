@@ -101,3 +101,7 @@ main>section {
     width: 80%;
     margin: 0px;
 }
+.list-links{
+    cursor: pointer;
+    user-select: none;
+}

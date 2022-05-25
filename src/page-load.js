@@ -13,6 +13,7 @@ const navBar = (()=>{
     const navLinks = [];
     for (let i = 0; i < pageOptions.length; i++) {
         const list = document.createElement("li");
+        list.classList.add("list-links");
         list.textContent = pageOptions[i];
         list.classList.add("list");
         navList.appendChild(list);
