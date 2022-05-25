@@ -1,28 +1,7 @@
 import './style.css';
 import Icon from './assets/food-pic.png';
 
-// function navBar(content) {
-//     const navBar = document.createElement("nav");
-//     navBar.classList.add("nav-bar");
-//     const pageTitle = document.createElement("h1");
-//     pageTitle.classList.add("page-title");
-//     pageTitle.textContent = "sussy restaurant"
-//     const navList = document.createElement("ul");
-//     const pageOptions = ["Menu","Categories","About","Reviews","Home"];
-//     const test = [];
-//     for (let i = 0; i < pageOptions.length; i++) {
-//         const list = document.createElement("li");
-//         list.textContent = pageOptions[i];
-//         list.classList.add("list");
-//         navList.appendChild(list);
-//         test.push(list);
-//     }
-//     navBar.appendChild(pageTitle);
-//     navBar.appendChild(navList);
-//     content.appendChild(navBar);
-// }
-
-const navTest = (()=>{
+const navBar = (()=>{
     const content = document.querySelector("#content");
     const navBar = document.createElement("nav");
     navBar.classList.add("nav-bar");
@@ -31,13 +10,13 @@ const navTest = (()=>{
     pageTitle.textContent = "sussy restaurant"
     const navList = document.createElement("ul");
     const pageOptions = ["Menu","Categories","About","Reviews","Home"];
-    const test = [];
+    const navLinks = [];
     for (let i = 0; i < pageOptions.length; i++) {
         const list = document.createElement("li");
         list.textContent = pageOptions[i];
         list.classList.add("list");
         navList.appendChild(list);
-        test.push(list);
+        navLinks.push(list);
     }
     function appendElement() {
         navBar.appendChild(pageTitle);
@@ -45,7 +24,7 @@ const navTest = (()=>{
         content.appendChild(navBar);
     }
     return{
-        appendElement,test
+        appendElement,navLinks
     }
 })();
 
@@ -75,8 +54,7 @@ function mainContent(content) {
 }
 function loadPage() {
     const content = document.querySelector("#content");
-    // navBar(content);
-    navTest.appendElement();
+    navBar.appendElement();
     mainContent(content);
 }
-export { loadPage, mainContent,navTest}
+export { loadPage, mainContent,navBar}
