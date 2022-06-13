@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load.js */ \"./src/page-load.js\");\n\n\n_page_load_js__WEBPACK_IMPORTED_MODULE_0__.loadPage();\nconst test = _page_load_js__WEBPACK_IMPORTED_MODULE_0__.navBar.navLinks;\ntest.forEach((element)=>{\n    element.addEventListener('click',()=>{\n        console.log(element.textContent);\n    });\n});\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load.js */ \"./src/page-load.js\");\n\n\n_page_load_js__WEBPACK_IMPORTED_MODULE_0__.loadPage();\nconst navLinks = _page_load_js__WEBPACK_IMPORTED_MODULE_0__.navBar.navLinks;\nconst mainContent = document.querySelector(\"main\");\nnavLinks.forEach((element)=>{\n    element.addEventListener('click',()=>{\n        console.log(element.textContent);\n        while (mainContent.firstChild) {\n            mainContent.removeChild(mainContent.firstChild)\n        }\n    });\n});\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
