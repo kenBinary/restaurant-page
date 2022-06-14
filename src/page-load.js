@@ -9,7 +9,7 @@ const navBar = (()=>{
     pageTitle.classList.add("page-title");
     pageTitle.textContent = "sussy restaurant"
     const navList = document.createElement("ul");
-    const pageOptions = ["Menu","Categories","About","Reviews","Home"];
+    const pageOptions = ["Home","Menu","Contact"];
     const navLinks = [];
     for (let i = 0; i < pageOptions.length; i++) {
         const list = document.createElement("li");

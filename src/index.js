@@ -1,4 +1,5 @@
 import * as pageLoad from './page-load.js'
+import loadMenu from './menu-page.js'
 
 pageLoad.loadPage();
 const navLinks = pageLoad.navBar.navLinks;
@@ -8,6 +9,9 @@ navLinks.forEach((element)=>{
         console.log(element.textContent);
         while (mainContent.firstChild) {
             mainContent.removeChild(mainContent.firstChild)
+        }
+        if (element.textContent === "Menu") {
+            loadMenu()
         }
     });
 });
