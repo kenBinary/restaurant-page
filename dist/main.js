@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMenu\": () => (/* binding */ loadMenu)\n/* harmony export */ });\n/* harmony import */ var _menu_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu-style.css */ \"./src/menu-style.css\");\n\n\nconst menuContent = (()=>{\n    const firstSection = document.createElement('section');\n    const secondSection = document.createElement('section');\n    firstSection.classList.add(\"menu-first-section\");\n    secondSection.classList.add(\"menu-second-section\");\n    const menuListNames = [\"Humba\", \"Kaldereta\", \"Sisig\",\"Lechno\", \"Lumpia\"];\n    const menuItems = [];\n    for (let index = 0; index < menuListNames.length; index++) {\n        const newDiv = document.createElement('div');\n        newDiv.textContent = menuListNames[index];\n        menuItems.push(newDiv);\n        firstSection.appendChild(newDiv);\n    }\n    function appendMenu(mainParent) {\n        mainParent.appendChild(firstSection);\n        mainParent.appendChild(secondSection);\n    }\n    return {appendMenu}\n})();\n\nfunction loadMenu() {\n    const content = document.querySelector(\"main\");\n    menuContent.appendMenu(content);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMenu\": () => (/* binding */ loadMenu)\n/* harmony export */ });\n/* harmony import */ var _menu_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu-style.css */ \"./src/menu-style.css\");\n/* harmony import */ var _assets_humba_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/humba.jpg */ \"./src/assets/humba.jpg\");\n/* harmony import */ var _assets_kaldereta_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/kaldereta.jpg */ \"./src/assets/kaldereta.jpg\");\n/* harmony import */ var _assets_lechon_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/lechon.jpg */ \"./src/assets/lechon.jpg\");\n/* harmony import */ var _assets_lumpia_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/lumpia.jpg */ \"./src/assets/lumpia.jpg\");\n/* harmony import */ var _assets_sisig_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/sisig.jpg */ \"./src/assets/sisig.jpg\");\n\n\n\n\n\n\nconst menuContent = (()=>{\n    const firstSection = document.createElement('section');\n    const secondSection = document.createElement('section');\n    firstSection.classList.add(\"menu-first-section\");\n    secondSection.classList.add(\"menu-second-section\");\n    const menuListNames = [\"Humba\", \"Kaldereta\", \"Sisig\",\"Lechon\", \"Lumpia\"];\n    const menuItems = [];\n    for (let index = 0; index < menuListNames.length; index++) {\n        const newDiv = document.createElement('div');\n        newDiv.textContent = menuListNames[index];\n        menuItems.push(newDiv);\n        firstSection.appendChild(newDiv);\n    }\n    const menuPictures = [_assets_humba_jpg__WEBPACK_IMPORTED_MODULE_1__,_assets_kaldereta_jpg__WEBPACK_IMPORTED_MODULE_2__,_assets_lechon_jpg__WEBPACK_IMPORTED_MODULE_3__,_assets_lumpia_jpg__WEBPACK_IMPORTED_MODULE_4__,_assets_sisig_jpg__WEBPACK_IMPORTED_MODULE_5__];\n    const humba = new Image();\n    // humba.src = menuPictures[4];\n    secondSection.appendChild(humba);\n\n\n    function appendMenu(mainParent) {\n        mainParent.appendChild(firstSection);\n        mainParent.appendChild(secondSection);\n    }\n    return {appendMenu,menuItems}\n})();\n\nfunction loadMenu() {\n    const content = document.querySelector(\"main\");\n    menuContent.appendMenu(content);\n    menuContent.menuItems.forEach((element)=>{\n        element.addEventListener('click',()=>{\n            console.log(\"bruh\");\n        });\n    });\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu-page.js?");
 
 /***/ }),
 
@@ -167,6 +167,56 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"f7410eeb5b19397e559b.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/food-pic.png?");
+
+/***/ }),
+
+/***/ "./src/assets/humba.jpg":
+/*!******************************!*\
+  !*** ./src/assets/humba.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f7cdbb003c9f962d45af.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/humba.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/kaldereta.jpg":
+/*!**********************************!*\
+  !*** ./src/assets/kaldereta.jpg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9547b2dc67b9aee8e08c.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/kaldereta.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/lechon.jpg":
+/*!*******************************!*\
+  !*** ./src/assets/lechon.jpg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"288cc3530d96c8e1bfbb.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/lechon.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/lumpia.jpg":
+/*!*******************************!*\
+  !*** ./src/assets/lumpia.jpg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"71b75f6df8a698ce028f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/lumpia.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/sisig.jpg":
+/*!******************************!*\
+  !*** ./src/assets/sisig.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"48317c6d6b2775da74ab.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/sisig.jpg?");
 
 /***/ })
 
