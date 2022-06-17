@@ -19,7 +19,7 @@ const menuContent = (() => {
     }
     const menuPictures = [humbaPic, kalderetaPic, sisigPic, lechonPic, lumpiaPic];
     const foodPic = new Image();
-    foodPic.src = menuPictures[1];
+    foodPic.src = menuPictures[0];
     secondSection.appendChild(foodPic);
 
 

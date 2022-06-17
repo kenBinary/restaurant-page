@@ -1,1 +1,36 @@
 @import url("style.css");
+.menu-first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+.menu-first-section div{
+    padding: 5px;
+    width: 80%;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eggshell);
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+.menu-first-section div:hover{
+    border: 2px solid;
+    border-color: var(--cardinal);
+}
+.menu-second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-second-section img{
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+}
