@@ -5,6 +5,7 @@ import lechonPic from './assets/lechon.jpg';
 import lumpiaPic from './assets/lumpia.jpg';
 import sisigPic from './assets/sisig.jpg';
 const menuContent = (() => {
+    const main = document.createElement("main");
     const firstSection = document.createElement('section');
     const secondSection = document.createElement('section');
     firstSection.classList.add("menu-first-section");
@@ -24,14 +25,15 @@ const menuContent = (() => {
 
 
     function appendMenu(mainParent) {
-        mainParent.appendChild(firstSection);
-        mainParent.appendChild(secondSection);
+        main.appendChild(firstSection);
+        main.appendChild(secondSection);
+        mainParent.appendChild(main)
     }
     return { appendMenu, menuItems, menuPictures, foodPic }
 })();
 
 function loadMenu() {
-    const content = document.querySelector("main");
+    const content = document.querySelector("#content");
     menuContent.appendMenu(content);
     menuContent.menuItems.forEach((element) => {
         element.addEventListener('click', () => {
