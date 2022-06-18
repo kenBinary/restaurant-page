@@ -4,6 +4,7 @@ import kalderetaPic from './assets/kaldereta.jpg';
 import lechonPic from './assets/lechon.jpg';
 import lumpiaPic from './assets/lumpia.jpg';
 import sisigPic from './assets/sisig.jpg';
+
 const menuContent = (() => {
     const main = document.createElement("main");
     const firstSection = document.createElement('section');
