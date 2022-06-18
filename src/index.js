@@ -5,18 +5,18 @@ pageLoad.loadPage();
 const navLinks = pageLoad.navBar.navLinks;
 const mainContent = document.querySelector("#content");
 
-// menuTab.loadMenu();
-
 navLinks.forEach((element)=>{
     element.addEventListener('click',()=>{
-        console.log(element.textContent);
         mainContent.removeChild(mainContent.lastChild)
+        console.log(element.textContent);
         if (element.textContent === "Home") {
             pageLoad.loadPage();
         } 
         else if(element.textContent === "Menu"){
             menuTab.loadMenu();
         }
-            
+        else if(element.textContent === "Contact"){
+        }
+
     });
 });
