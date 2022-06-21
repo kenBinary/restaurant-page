@@ -5,6 +5,9 @@ import * as contactTab from './contact-page.js';
 pageLoad.loadPage();
 const navLinks = pageLoad.navBar.navLinks;
 const mainContent = document.querySelector("#content");
+// mainContent.removeChild(mainContent.lastChild)
+// contactTab.loadContact();
+
 
 navLinks.forEach((element)=>{
     element.addEventListener('click',()=>{
@@ -18,6 +21,5 @@ navLinks.forEach((element)=>{
         else if(element.textContent === "Contact"){
             contactTab.loadContact();
         }
-
     });
 });
